@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffefe;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ .icon{
+    color: rgb(14, 158, 14);
+}
+.container {
+    background-color: #fffbfb;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.calculator label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555555;
+    text-align: left;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: rgb(2, 197, 2);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    transition: background-color 0.6s ease;
+}
+
+button:hover {
+    background-color: #0a920a;
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #387de4;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .calculator label {
+        font-size: 14px;
+    }
+
+    .calculator input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .container {
+        padding: 25px;
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .calculator input, button {
+        font-size: 15px;
+    }
+
+    #result {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 30px;
+        max-width: 60%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .calculator input, button {
+        font-size: 16px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
